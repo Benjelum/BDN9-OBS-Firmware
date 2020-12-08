@@ -1,0 +1,19 @@
+Mock Keyboard Layers Diagram:
+
+//all lights breathing slow
+Layer 1 Soundboard 1	Blue default layer
+Layer 2 Soundboard 2	Cyan
+Layer 3 Soundboard 3	Orange
+Layer 4 Soundboard 4    Magenta
+
+right dial layer changes contained 1-4
+right dial turns brightness up and down when scrolling past layers 1 or 4
+		
+Layer 5 Streaming:	Purple/Green or Red conditionally
+	clicking the right dial toggles stream layer on/off on top of layers 1-4
+	right dial controls volume 
+	left dial changes muting between discord and stream.
+	clicking left dial send OBS shortcut for muting, clicking again sends unmute code, for use as master mute
+	6 lower buttons and upper button are free for asinging to OBS scenes
+		
+	

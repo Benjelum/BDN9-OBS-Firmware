@@ -1,0 +1,40 @@
+//encoder positions:
+//pos 1			pos 2			pos 3
+//stream only	both unmute		discord only
+//Blue LED		Green LED		Purple LED
+//all breathing at moderate speed
+
+click: 
+	MUTE BOTH
+		Change to loud LED red Knightrider
+	Toggle
+		Unmute both & set to pos2
+		change LED to pos2 //w animation to static? :0
+
+Case
+	cw:
+		Case
+		//do these need to be checked in reverse?
+			pos1 
+				//to pos2
+				unmute discord
+				LED Green
+			pos2
+				//to pos 3
+				mute obs
+				LED Purple
+			pos3
+				overflowScrollFuncUp
+				
+	ccw:
+		Case	
+			pos3
+				//to pos2
+				unmute stream
+				LED Green
+			pos2
+				//to pos1
+				mute Discord
+				LED Blue
+			pos1
+				overflowScrollFuncDown
